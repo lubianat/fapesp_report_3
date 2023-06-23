@@ -22,6 +22,7 @@
   }
 
   @media only screen {
+
     /* "page" element */
     body {
       position: relative;
@@ -40,6 +41,7 @@
 
   /* when on screen < 8.5in wide */
   @media only screen and (max-width: 8.5in) {
+
     /* "page" element */
     body {
       padding: 20px;
@@ -84,18 +86,23 @@
   h1 {
     font-size: 2em;
   }
+
   h2 {
     font-size: 1.5em;
   }
+
   h3 {
     font-size: 1.35em;
   }
+
   h4 {
     font-size: 1.25em;
   }
+
   h5 {
     font-size: 1.15em;
   }
+
   h6 {
     font-size: 1em;
   }
@@ -105,13 +112,13 @@
   /* -------------------------------------------------- */
 
   /* manuscript title */
-  header > h1 {
+  header>h1 {
     margin: 0;
   }
 
   /* manuscript title caption text (ie "automatically generated on") */
-  header + p {
-    text-align: center;
+  header+p {
+    text-align: left;
     margin-top: 10px;
   }
 
@@ -210,8 +217,8 @@
   }
 
   /* figure image element */
-  figure > img,
-  figure > svg {
+  figure>img,
+  figure>svg {
     max-width: 100%;
     display: block;
     margin-left: auto;
@@ -219,8 +226,8 @@
   }
 
   /* figure auto-number */
-  img + figcaption > span:first-of-type,
-  svg + figcaption > span:first-of-type {
+  img+figcaption>span:first-of-type,
+  svg+figcaption>span:first-of-type {
     font-weight: bold;
     margin-right: 5px;
   }
@@ -267,7 +274,7 @@
   }
 
   /* table auto-number */
-  table > caption > span:first-of-type {
+  table>caption>span:first-of-type {
     font-weight: bold;
     margin-right: 5px;
   }
@@ -287,7 +294,7 @@
   }
 
   /* inline code, ie code within normal text */
-  :not(pre) > code {
+  :not(pre)>code {
     padding: 0 4px;
     background-color: #eeeeee;
     color: #000000;
@@ -299,7 +306,7 @@
   code,
   code * {
     /* force monospace font */
-    font-family: "Source Code Pro", "Courier New", monospace;
+    font-family: "Times New Roman", "Source Code Pro", "Courier New", monospace;
   }
 
   /* -------------------------------------------------- */
@@ -332,7 +339,7 @@
   }
 
   /* paragraph in banner */
-  .banner > p {
+  .banner>p {
     margin: 0;
   }
 
@@ -343,51 +350,67 @@
   .white {
     background: #ffffff;
   }
+
   .lightgrey {
     background: #eeeeee;
   }
+
   .grey {
     background: #757575;
   }
+
   .darkgrey {
     background: #424242;
   }
+
   .black {
     background: #000000;
   }
+
   .lightred {
     background: #ffcdd2;
   }
+
   .lightyellow {
     background: #ffecb3;
   }
+
   .lightgreen {
     background: #dcedc8;
   }
+
   .lightblue {
     background: #e3f2fd;
   }
+
   .lightpurple {
     background: #f3e5f5;
   }
+
   .red {
     background: #f44336;
   }
+
   .orange {
     background: #ff9800;
   }
+
   .yellow {
     background: #ffeb3b;
   }
+
   .green {
     background: #4caf50;
   }
+
   .blue {
     background: #2196f3;
   }
+
   .purple {
     background: #9c27b0;
   }
+
   .white,
   .lightgrey,
   .lightred,
@@ -408,6 +431,7 @@
   .yellow a {
     color: #000000;
   }
+
   .grey,
   .darkgrey,
   .black,
@@ -479,7 +503,7 @@
   }
 
   /* icon button inner svg image */
-  .icon_button > svg {
+  .icon_button>svg {
     height: 16px;
   }
 
@@ -524,7 +548,7 @@
 
     /* "page" element */
     body {
-      font-size: 11pt !important;
+      font-size: 12pt !important;
       line-height: 1.35;
     }
 
@@ -638,12 +662,13 @@
     margin: 20px 0;
   }
 
-  .tablenos > table {
+  .tablenos>table {
     /* move margins from table to table_wrapper to allow margin collapsing */
     margin: 0;
   }
 
   @media only screen {
+
     /* tablenos wrapper */
     .tablenos {
       /* show scrollbar on tables if necessary to prevent overflow */
